@@ -1,0 +1,24 @@
+body {
+    max-width: 50em;
+    margin: 0 auto;
+    font-family: Helvetiva, sans-serif;
+    line-height: 1.5em;
+    color: #555;
+}
+
+article {
+    /* background-color: hsl(0, 100%, 97%); */
+}
+
+h1, h2, h3, strong {
+    color: #222;
+}
+
+h2 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h3, h4 {
+    margin-top: 2em;
+}
