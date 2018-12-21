@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <h1 id="title">Survey Form</h1>
+    <div>
+        <p id="description">Tell us something</p>
+        <form id="survey-form">
+            <label id="name-label" for="name">
+                Name: <input id="name" type="text" placeholder="Enter your name" required>
+            </label>
+            <label id="email-label" for="email">
+                Email: <input id="email" type="email" placeholder="Enter your email" required>
+            </label>
+            <label id="number-label" for="number">
+                Age: <input id="number" type="number" name="age" min="0" max="130" placeholder="Enter your age">
+            </label>
+            <label>
+                Marital status: <select id="dropdown">
+                    <option disabled selected>Select your marital status</option>
+                    <option value="Married">Married</option>
+                    <option value="Divorced">Divorced</option>
+                    <option value="Single">Single</option>
+                </select>
+            </label>
+            <label>
+                Do you enjoy this survey?
+                <ul>
+                    <li>
+                        <label>
+                            <input value="1" name="statement-answer" type="radio"> Definately not!
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input value="2" name="statement-answer" type="radio"> Not sure...
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input value="3" name="statement-answer" type="radio"> You bet!
+                        </label>
+                    </li>
+                </ul>
+            </label>
+            <label>
+                What would you like to add to this form?
+                <ul>
+                    <li>
+                        <label>
+                            <input type="checkbox" value="1">
+                            More buttons
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" value="2">
+                            More input fileds
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" value="3">
+                            More bells and whistles
+                        </label>
+                    </li>
+                </ul>
+            </label>
+            <label>
+                Want to add something?
+                <textarea></textarea>
+            </label>
+            <button id="submit" type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
