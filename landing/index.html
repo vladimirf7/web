@@ -1,45 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Awesome Guitars</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
     <div id="content">
         <header id="header">
             <div id="logo">
-                <img id="header-img" src="http://bgzbrands.com/wp-content/uploads/2017/02/AG-Logo-Standalone.png" alt="'Aswesome Guitars' logo"/>
+                <img id="header-img" src="http://bgzbrands.com/wp-content/uploads/2017/02/AG-Logo-Standalone.png" alt="'Aswesome Guitars' logo" />
                 <div>Awesome Guitars</div>
             </div>
             <nav id="nav-bar">
                 <ul>
-                    <li href="#models">
-                        <a class="nav-link" href="#models">Models</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#faq">FAQ</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#features">Features</a>
-                    </li>
+                    <li><a class="nav-link" href="#models">Models</a></li>
+                    <li><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li><a class="nav-link" href="#colors">Colors</a></li>
                 </ul>
             </nav>
         </header>
         <main>
+            <h2>Super-duper cool guitars!</h2>
             <form id="form" action="https://www.freecodecamp.com/email-submit">
                 <input id="email" name="email" type="email" placeholder="Enter your email" required>
-                <input id="submit" type="submit">
+                <input id="submit" type="submit" value="I want a discount!">
             </form>
-            <section id="models"></section>
+            <section id="models">
+                <div class="row">
+                    <div class="photo">
+                        <img src="https://dk1xgl0d43mu1.cloudfront.net/user_files/esp/site_assets/000/023/710/original.png?1520963701">
+                    </div>
+                    <div class="desc">
+                        <h3>Eclipse</h3>
+                        <p>Set-Thru, 24.75” Scale, Chambered Mahogany Body, 3Pc Mahogany Neck, Ebony Fingerboard, 22 XJ
+                            Frets, Tonepros Locking TOM Bridge & Tailpiece, Sperzel Locking Tuners, EMG or Seymour
+                            Duncan pickups</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="photo">
+                        <img src="https://dk1xgl0d43mu1.cloudfront.net/user_files/esp/site_assets/000/029/896/original.png?1542825966">
+                    </div>
+                    <div class="desc">
+                        <h3>Eclipse</h3>
+                        <p>Set-Thru, 24.75” Scale, Chambered Mahogany Body, 3Pc Mahogany Neck, Ebony Fingerboard, 22 XJ
+                            Frets, Tonepros Locking TOM Bridge & Tailpiece, Sperzel Locking Tuners, EMG or Seymour
+                            Duncan pickups</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="photo">
+                        <img src="https://dk1xgl0d43mu1.cloudfront.net/user_files/esp/site_assets/000/029/893/original.png?1542759397">
+                    </div>
+                    <div class="desc">
+                        <h3>Eclipse</h3>
+                        <p>Set-Thru, 24.75” Scale, Chambered Mahogany Body, 3Pc Mahogany Neck, Ebony Fingerboard, 22 XJ
+                            Frets, Tonepros Locking TOM Bridge & Tailpiece, Sperzel Locking Tuners, EMG or Seymour
+                            Duncan pickups</p>
+                    </div>
+                </div>
+            </section>
             <section id="faq"></section>
-            <section id="features"></section>
-            <video id="video" width="350" controls>
-                    <source src="https://dk1xgl0d43mu1.cloudfront.net/user_files/esp/videos/002/035/744/transcoded.mp4?1544827746" type="video/mp4">
-            </video>
+            <section id="demo">
+                <video id="video" controls>
+                    <source src="https://dk1xgl0d43mu1.cloudfront.net/user_files/esp/videos/002/035/790/transcoded.mp4">
+                </video>
+            </section>
+            <section id="colors">
+                <div class="color">
+                    <div class="color-name">LYNCH BURST</div>
+                    <div class="color-img">
+                        <img src="https://dk1xgl0d43mu1.cloudfront.net/user_files/esp/site_assets/000/027/955/original.png?1521681944">
+                    </div>
+                    <button>Select</button>
+                </div>
+                <div class="color">
+                    <div class="color-name">PURPLE SUNBURST</div>
+                    <div class="color-img">
+                        <img src="https://dk1xgl0d43mu1.cloudfront.net/user_files/esp/site_assets/000/027/983/original.png?1521768077">
+                    </div>
+                    <button>Select</button>
+                </div>
+                <div class="color">
+                    <div class="color-name">SEE THRU BLACK</div>
+                    <div class="color-img">
+                        <img src="https://dk1xgl0d43mu1.cloudfront.net/user_files/esp/site_assets/000/027/985/original.png?1521767932">
+                    </div>
+                    <button>Select</button>
+                </div>
+                <div class="color">
+                    <div class="color-name">LIME BURST</div>
+                    <div class="color-img">
+                        <img src="https://dk1xgl0d43mu1.cloudfront.net/user_files/esp/site_assets/000/027/952/original.png?1521667067">
+                    </div>
+                    <button>Select</button>
+                </div>
+            </section>
         </main>
         <footer></footer>
     </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>
