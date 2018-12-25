@@ -7,15 +7,7 @@ body {
 #content {
     margin: 0 auto;
     max-width: 80vw;
-}
-
-#header-img {
-    height: 50px;
-}
-
-#logo {
-    display: inline-block;
-    width: 50vw;
+    background-color: #EEE;
 }
 
 #logo h1 {
@@ -23,23 +15,42 @@ body {
 }
 
 header {
-    background-color: hsl(180, 100%, 95%);
+    display: flex;
+    padding: 10px;
+}
+
+#header-img {
+    height: 50px;
+}
+
+#logo {
+    display: flex;
+    width: 60%;
+    align-items: flex-end;
 }
 
 nav {
-    display: inline-block;
+    width: 40%;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-around;
-    width: 25vw;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 50px;
+    margin: 0;
+    padding: 0;
 }
 
-nav li {
+nav li{
     list-style: none;
 }
 
 nav a {
     text-decoration: none;
+    margin: 0 auto;
+}
+
+main {
+    padding: 10px;
 }
