@@ -1,13 +1,117 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,800');
 
 body {
+    --main-color: rgb(139, 148, 153);
     background-color: rgb(24, 32, 37);
-    color: rgb(139, 148, 153);
+    color: var(--main-color);
     font-family: Poppins, sans-serif;
+    padding: 10px;
+}
+
+@media (max-width: 700px) {
+    body {
+        background-color: brown; /*TODO:*/
+    }
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* Navigation */
+#navbar {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    min-width: 300px;
+    border-right: 1px solid #000508;
+    height: 100%;
+}
+
+#navbar img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+#navbar header {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+#navbar ul {
+    padding: 0;
+}
+
+#navbar li {
+    padding: 6px 0;
+    border-top: 1px solid #000508;
+    list-style: none;
+}
+
+#navbar li:last-child {
+    border-bottom: 1px solid #000508;
+}
+
+#navbar a {
+    text-decoration: none;
+    transition: color 200ms;
+    color: var(--main-color);
+}
+
+#navbar a:hover {
+    color: #FFF;
+    transition: color 200ms;
+}
+
+/* Main */
+#main-doc {
+    margin-left: 310px;
+    padding:  15px;
+    font-weight: 300;
+}
+
+
+/* Sections */
+.main-section header {
+    font-size: 1.6em;
+    text-transform: capitalize;
+    margin-top: 1.5em;
+    font-weight: 700;
+}
+
+.main-section:first-child header {
+    margin-top: 0;
+}
+
+.main-section img {
+    display: block;
+    margin: 0 auto;
+}
+
+.main-section ul {
+    margin-bottom: 10px;
+}
+
+.main-section li {
+    margin-top: 13px;
+}
+
+.main-section code {
+    display: block;
+    margin: 15px;
+    padding: 20px;
+    background-color: rgb(33, 48, 55);
+    border-radius: 3px;
+    border-left: 5px solid rgb(63, 79, 87);
+    white-space: pre;
+}
+
+.main-section .highlight {
+    display: inline;
+    background-color: rgb(33, 48, 55);
+    padding: 4px;
+    border-radius: 3px;
+    font-family: monospace;
 }
