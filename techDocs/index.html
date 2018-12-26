@@ -1,13 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>JavaScript Documentation</title>
 </head>
+
 <body>
-    
+    <nav id="nav-bar">
+        <header>JavaScript Docs</header>
+        <a class="nav-link">Introduction</a>
+        <a class="nav-link">What you should already know</a>
+        <a class="nav-link">What is JavaScript</a>
+        <a class="nav-link">Arrays</a>
+        <a class="nav-link">if ... else statements</a>
+    </nav>
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header>Introduction</header>
+            <article>
+                <p><strong>JavaScript (JS)</strong> is a lightweight interpreted or JIT-compiled programming language
+                    with first-class functions. While it is most well-known as the scripting language for Web pages,
+                    many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat.
+                    JavaScript is a prototype-based, multi-paradigm, dynamic language, supporting object-oriented,
+                    imperative, and declarative (e.g. functional programming) styles. Read more about JavaScript.</p>
+            </article>
+        </section>
+        <section id="What_you_should_already_know" class="main-section">
+            <header>What you should already know</header>
+            <article>
+                <p>
+                    This guide assumes you have the following basic background:
+
+                    A general understanding of the Internet and the World Wide Web (WWW).
+                    Good working knowledge of HyperText Markup Language (HTML).
+                    Some programming experience. If you are new to programming, try one of the tutorials linked on the
+                    main page about JavaScript.
+                </p>
+            </article>
+        </section>
+        <section id="What_is_JavaScript" class="main-section">
+            <header>What is JavaScript?</header>
+            <article>
+                <p>
+                    JavaScript is a cross-platform, object-oriented scripting language used to make webpages
+                    interactive (e.g. having complex animations, clickable buttons, popup menus, etc.). There are also
+                    more advanced server side versions of JavaScript such as Node.Js which allow you to add more
+                    functionality to a website than simply downloading files (such as realtime collaboration between
+                    multiple computers). Inside a host environment (for example, a web browser), JavaScript can be
+                    connected to the objects of its environment to provide programmatic control over them.
+
+                    JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of
+                    language elements such as operators, control structures, and statements. Core JavaScript can be
+                    extended for a variety of purposes by supplementing it with additional objects; for example:
+
+                    Client-side JavaScript extends the core language by supplying objects to control a browser and its
+                    Document Object Model (DOM). For example, client-side extensions allow an application to place
+                    elements on an HTML form and respond to user events such as mouse clicks, form input, and page
+                    navigation.
+                    Server-side JavaScript extends the core language by supplying objects relevant to running
+                    JavaScript on a server. For example, server-side extensions allow an application to communicate
+                    with a database, provide continuity of information from one invocation to another of the
+                    application, or perform file manipulations on a server.
+                    This means that in the browser, JavaScript can change the way the webpage (DOM) looks. And,
+                    likewise, Node.js JavaScript on the server can respond to custom requests from code written in the
+                    browser.</p>
+            </article>
+        </section>
+        <section id="Arrays" class="main-section">
+            <header>Arrays</header>
+            <article>
+                <p>
+                        What is an array?Section
+                        Arrays are generally described as "list-like objects"; they are basically single objects that contain multiple values stored in a list. Array objects can be stored in variables and dealt with in much the same way as any other type of value, the difference being that we can access each value inside the list individually, and do super useful and efficient things with the list, like loop through it and do the same thing to every value. Maybe we've got a series of product items and their prices stored in an array, and we want to loop through them all and print them out on an invoice, while totaling all the prices together and printing out the total price at the bottom.
+                        
+                        If we didn't have arrays, we'd have to store every item in a separate variable, then call the code that does the printing and adding separately for each item. This would be much longer to write out, less efficient, and more error-prone. If we had 10 items to add to the invoice it would be bad enough, but what about 100 items, or 1000? We'll return to this example later on in the article.
+                        
+                        As in previous articles, let's learn about the real basics of arrays by entering some examples into a JavaScript console. We've provided one below (you can also open this console in a separate tab or window, or use the browser developer console if you prefer).
+                        
+                        
+                        
+                        Creating an arraySection
+                        Arrays are constructed of square brackets, which contain a list of items separated by commas.
+                        
+                        Let's say we wanted to store a shopping list in an array — we'd do something like the following. Enter the following lines into your console:
+                        var shopping = ['bread', 'milk', 'cheese', 'hummus', 'noodles'];
+                        shopping;
+                        In this case, each item in the array is a string, but bear in mind that you can store any item in an array — string, number, object, another variable, even another array. You can also mix and match item types — they don't all have to be numbers, strings, etc. Try these:
+                        var sequence = [1, 1, 2, 3, 5, 8, 13];
+                        var random = ['tree', 795, [0, 1, 2]];
+                        Try creating a couple of arrays of your own, before you move on.
+                        Accessing and modifying array itemsSection
+                        You can then access individual items in the array using bracket notation, in the same way that you accessed the letters in a string.
+                        
+                        Enter the following into your console:
+                        shopping[0];
+                        // returns "bread"
+                        You can also modify an item in an array by simply giving a single array item a new value. Try this:
+                        shopping[0] = 'tahini';
+                        shopping;
+                        // shopping will now return [ "tahini", "milk", "cheese", "hummus", "noodles" ]
+                        Note: We've said it before, but just as a reminder — computers start counting from 0!
+                        Note that an array inside an array is called a multidimensional array. You can access an item inside an array that is itself inside another array by chaining two sets of square brackets together. For example, to access one of the items inside the array that is the third item inside the random array (see previous section), we could do something like this:
+                        random[2][2];
+                        Try making some more modifications to your array examples before moving on. Have a  play, and see what works and what doesn't.
+                </p>
+            </article>
+        </section>
+        <section id="if_else_statements" class="main-section">
+            <header>if ... else statements</header>
+            <article>
+                <p>Let's look at by far the most common type of conditional statement you'll use in JavaScript — the
+                    humble if ... else statement.
+
+                    Basic if ... else syntaxSection
+                    Basic if...else syntax looks like so in pseudocode:
+
+                    if (condition) {
+                    code to run if condition is true
+                    } else {
+                    run some other code instead
+                    }
+                    Here we've got:
+
+                    The keyword if followed by some parentheses.
+                    A condition to test, placed inside the parentheses (typically "is this value bigger than this other
+                    value", or "does this value exist"). This condition will make use of the comparison operators we
+                    discussed in the last module and will return true or false.
+                    A set of curly braces, inside which we have some code — this can be any code we like, and will only
+                    be run if the condition returns true.
+                    The keyword else.
+                    Another set of curly braces, inside which we have some more code — this can be any code we like,
+                    and will only be run if the condition is not true.
+                    This code is pretty human-readable — it is saying "if the condition returns true, run code A, else
+                    run code B"
+
+                    You should note that you don't have to include the else and the second curly brace block — the
+                    following is also perfectly legal code:
+
+                    if (condition) {
+                    code to run if condition is true
+                    }
+
+                    run some other code
+                    However, you need to be careful here — in this case, the second block of code is not controlled by
+                    the conditional statement, so it will always run, regardless of whether the condition returns true
+                    or false. This is not necessarily a bad thing, but it might not be what you want — often you will
+                    want to run one block of code or the other, not both.
+
+                    As a final point, you may sometimes see if...else statements written without the curly braces, in
+                    the following shorthand style:
+
+                    if (condition) code to run if condition is true
+                    else run some other code instead
+                    This is perfectly valid code, but using it is not recommended — it is much easier to read the code
+                    and work out what is going on if you use the curly braces to delimit the blocks of code, and use
+                    multiple lines and indentation.</p>
+            </article>
+        </section>
+    </main>
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>
