@@ -4,45 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">  
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header>
-        <navbar id="navbar">
+        <nav id="navbar">
             <ul>
                 <li><a href="#welcome-section">Welcome</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contacts">Contacts</a></li>
             </ul>
-        </navbar>
+        </nav>
     </header>
     <main>
         <section id="welcome-section">
             <h1>Hi there! I'm Vlad.</h1>
-            <p>a developer.</p>
+            <p>developer</p>
         </section>
         <section id="projects">
-            <p>Here are some of my study projects:</p>
-            <div class="project">
-                <h1 class="project-title">Survey Form</h1>
-                <img src="static/form.png">
-            </div>
-            <div class="project">
-                <h1 class="project-title">Tech Documentation</h1>
-                <img src="static/tech.png">
-            </div>
-            <div class="project">
-                <h1 class="project-title">Landing Page</h1>
-                <img src="static/landing.png">
+            <h1>Here are some of my study projects:</h1>
+            <div id="projects-container">
+                <div class="project">
+                    <div class="project-tile">Survey Form</div>
+                    <a href="#"><img src="static/form.png"></a>
+                </div>
+                <div class="project">
+                    <div class="project-tile">Tech Documentation</div>
+                    <a href="#"><img src="static/tech.png"></a>
+                </div>
+                <div class="project">
+                    <div class="project-tile">Landing Page</div>
+                    <a href="#"><img src="static/landing.png"></a>
+                </div>
             </div>
         </section>
         <section id="contacts">
-            <h1>You can reach my with</h1>
+            <h1>You can reach me with</h1>
             <ul>
-                <li><a href="#" id="profile-link" target="_blank">GitHub</a></li>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Main</a></li>
-                <li><a href="#">Call</a></li>
+                <li><a href="#" id="profile-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li>
+                <li><a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#" title="Email"><i class="fas fa-at"></i></a></li>
+                <li><a href="#" title="Phone"><i class="fas fa-phone"></i></a></li>
             </ul>
         </section>
     </main>
