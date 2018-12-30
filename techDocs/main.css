@@ -8,12 +8,6 @@ body {
     padding: 10px;
 }
 
-@media (max-width: 700px) {
-    body {
-        background-color: brown; /*TODO:*/
-    }
-}
-
 p {
     margin-bottom: 10px;
     text-align: justify;
@@ -27,6 +21,22 @@ p {
     min-width: 300px;
     border-right: 1px solid #000508;
     height: 100%;
+}
+
+@media (max-width: 700px) {
+    #navbar {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        max-height: 250px;
+        overflow: auto;
+    }
+
+    #main-doc {
+        margin-left: 0;
+        margin-top: 250px;
+        position: relative;
+    }
 }
 
 #navbar img {
